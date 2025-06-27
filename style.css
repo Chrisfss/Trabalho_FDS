@@ -66,6 +66,12 @@ table img {
     font-size: 18px;
     text-align: center;
 }
+#mouse{
+    color: rgb(27, 27, 87);
+}
+#mouse:hover {
+    color: blueviolet;
+}
 footer {
     background-color: slategray;
     height: 80px;
