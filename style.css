@@ -73,3 +73,10 @@ footer {
     padding: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+#botao {
+    background-color:rgb(178, 195, 211);
+
+}
+#mensagem{
+    text-align: center;
+}

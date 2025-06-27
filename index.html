@@ -6,7 +6,7 @@
     <title>Trabalho FDS</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="Imagens/Christian.ico" type="image/x-icon">
-    <script src="script.js"></script>
+    <!--<script src="script.js"></script>-->
 </head>
 <body>
     <main>
@@ -57,9 +57,24 @@
             Por fim, gostaria de convidá-los ao meu repositótio público do GitHub. <br> <img src="icones/icone-github.png" alt="icone-github"><a href="https://github.com/Chrisfss" target="_blank" rel="external">/Chrisfss</a>
         </p>
     </main>
-    <footer>
-        <p>Site feito por Christian Fernandes</p>
-        <button id="botao">Clique aqui</button>
+    <footer id="rodape">
+        <button id="botao">Clique para ver uma mensagem!
+        </button>
+        <div id="mensagem"></div>
+         <p>Site feito por Christian Fernandes</p>
+        <script>
+            let botao = document.querySelector("#botao");
+            let mensagem = document.querySelector("#mensagem");
+            let rodape = document.querySelector("#rodape");
+
+            botao.addEventListener('click', mudanca)
+
+            function mudanca(){
+                mensagem.innerHTML="Não adie mais a vida para a qual você está destinado. Assuma a responsabilidade e a construa!";
+                rodape.style.height="15vh";
+                botao.style.display="none";
+            }
+        </script>
     </footer>
 </body>
 </html>
